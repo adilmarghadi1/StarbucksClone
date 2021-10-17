@@ -1,0 +1,506 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.navbar li {
+    list-style: none;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+
+ 
+.navbar {
+    display: flex;
+    padding:1rem 1.2rem;
+   
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width:25px;
+    height: 3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+
+}
+
+.nav-item {
+    margin-left: 2.1rem;
+    
+}
+
+
+
+.nav-link:hover{
+    color: #545c66;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    font-weight: 650;
+    color:rgb(26 19 19 / 87%);
+}
+.nav-menu .right1{
+    position: absolute;
+    right:0;
+    margin-right:260px;
+}
+.nav-menu .right2 {
+    position: absolute;
+    right:0;
+    margin-right: 140px
+
+}
+
+.nav-menu .right3 {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+.logo1 svg {
+    
+    width: 60px;
+
+
+}
+
+.button1 {
+    border:1px solid black;
+    border-radius: 50px;
+    padding:7px 16px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.button2 {
+    font-weight: 600;
+    border:1px solid black;
+    border-radius: 50px;
+    padding:7px 16px;
+    color:white;
+    font-size: 1em;
+    
+    background-color: black;
+}
+
+@media screen and (max-width: 800px)
+{
+    .nav-menu .right1 {
+        position: relative;
+        margin: 0  auto;
+    }
+.nav-menu .right2 {
+    position: relative;
+    margin:0 auto;
+
+}
+
+.nav-menu .right3 {
+    position: relative;
+    margin:0 auto;
+
+}
+
+    
+    .nav-menu {
+        position: fixed;
+        left:-100%;
+        top:6rem;
+        flex-direction: column;
+        background-color: #fff;
+        width:100%;
+        height: 65%;
+        padding:auto;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        padding-top:5px;
+    }
+    .hamburger {
+        margin-top:17px;
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+.borderbo p
+{
+    font-weight: 600;
+    color:white;
+    padding:13px 50px;
+    background-color: rgb(26 19 19 / 87%);
+     width:100%;
+     height:6vh;
+    padding-left: 10rem;
+    padding-right: 1.6rem;
+}
+
+.back {
+    background-color: rgb(212, 233, 226); 
+    background-image: url("https://www.starbucks.com/weblx/images/rewards/hero/xl-hero-desktop_2021.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height: 80vh;
+}
+
+
+.back h1 {
+    padding-top:170px;
+    padding-left:30px;
+    color:rgba(0,0,0,.87);
+    font-size: 2.2em;
+    line-height: 1.4;
+    
+}
+
+.back p {
+    font-size: 1.5em;
+    color:rgba(0,0,0,.87);
+    padding-left: 30px;
+}
+
+.back button {
+    background-color: #00754a;
+    border-color: #00754a;
+    border:none;
+    padding:7px 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.back button:hover {
+    transition: all 0.3s ease-in-out;
+    background-color:#545c66;
+}
+
+.back h3 {
+    padding-left:30px;
+    color:rgba(0,0,0,.87);
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.back h3 a {
+    color:rgba(0,0,0,.87);
+    
+    
+}
+
+.section2 h1 {
+    text-align: center;
+    padding-top:90px;
+    color:rgba(0,0,0,.87);
+    font-size: 1.9em;
+}
+
+.section2 p {
+    text-align: center;
+    padding-top:30px;
+    font-size: 1.1em;
+    font-weight: 550;
+    color:rgba(0,0,0,.87);
+    margin-bottom: 70px;
+}
+
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box1 h3 {
+    font-weight: 790;
+    font-size: 1.3em;
+    color:rgba(0,0,0,.87);
+    margin:30px auto;
+    text-align: center;
+}
+
+.box1 p {
+    margin-left: 70px;
+    color:rgba(0,0,0,.87);
+    font-weight: 400;
+    line-height: 1.5;
+    padding-right: 30px;
+    font-size: 1.1em;
+    text-align: center
+    
+}
+.box1 p a {
+    color:rgb(10, 185, 10);
+}
+.box1 p a:hover {
+    text-decoration: none;
+}
+
+.box1 .image1 {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+}
+
+
+.section3 h1 {
+    font-size: 1.8em;
+    font-weight: 550;
+    text-align: center;
+    color:rgba(0,0,0,.87);
+    margin-top:100px;
+}
+
+@media screen and (max-width:768px)
+{
+    .grid1 {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .box1 .image1 {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:568px)
+{
+    .grid1 {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+.portfolio .row {
+  /* display: grid; */
+  grid-template-columns: 1fr 1.6fr;
+}
+
+
+
+.portfolio .filter-btns {
+  position: relative;
+}
+
+.portfolio .filter-btns::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.portfolio .filter-btns span {
+  margin-right: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+
+.portfolio .filter-btns span.active {
+  border-color: #00754a;
+  color: #545c66;
+}
+
+.portfolio .projects {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.portfolio .projects .item.hide {
+  display: none;
+}
+
+.portfolio .projects .item.active {
+  display: block;
+}
+
+@media (max-width: 996px) {
+  .portfolio .row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .portfolio .title {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .projects .filter-btns {
+    padding: 3.5rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .portfolio .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 597px) {
+  .portfolio .filter-btns {
+    align-items: flex-start;
+  }
+  .portfolio .filter-btns span {
+    font-size: 1.5rem;
+    display: inherit;
+    margin-right: 0rem;
+    padding: 0.5rem;
+  }
+
+  .portfolio .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width:864px)
+{
+    .portfolio .projects {
+    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    }
+}
+.color-gold {
+    color: #cba258;
+}
+
+.centret {
+    display: flex;
+    justify-content: center;
+    margin-top:40px;
+    
+}
+
+.centret span {
+    font-size: 1.4em;
+    color: #2b3e55;
+}
+
+
+
+.projects  {
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+       align-items: center;
+
+}
+.helloa{
+    width:400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+    
+}
+
+.section5 h1 {
+    padding-top:90px;
+    font-size: 2em;
+    color:rgba(0,0,0,.87);
+    text-align: center;
+}
+
+.section5 p {
+    text-align: center;
+    color:rgba(0,0,0,.87);
+    font-size: 1.2em;
+    padding-top:30px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.box3 img {
+    width:150px;
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    margin-top:60px;
+    margin-bottom: -60px;
+
+}
+
+.box3 h1 {
+    font-size: 1.5em;
+}
+
+.box3 p{
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width:880px)
+{
+    .grid2 {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .box3 p {
+        margin-right:10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:550px)
+{
+    .grid2 {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
